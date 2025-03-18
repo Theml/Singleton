@@ -9,6 +9,7 @@ classDiagram
 Singleton: - instance
 Singleton: - Singleton()
 Singleton: + static getInstance()
+Singleton --> Singleton : "instance"
 ```
 
 
@@ -24,4 +25,5 @@ classDiagram
     - Loggers()
     + static getInstance()
 }
+Loggers --> Loggers : "instance"
 ```
